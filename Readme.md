@@ -2,7 +2,7 @@
 
 This is a wrapper for different POS taggers.
 
-# input format
+## input format
 
 This tools reads from a database:
 
@@ -28,24 +28,24 @@ mysql> DESCRIBE words_pos_base;
 +-----------+------------------+------+-----+---------+-------+
 ```
 
-# implemented taggers
+## implemented taggers
 
 * [TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
 * [RDRPOSTagger](http://rdrpostagger.sourceforge.net) (there are some things to do)
 
 
-# usage
+## usage
 
 ```
 ./pos-wrapper -tagger the_tagger_of_your_choice -db-name database_name
 ```
 
-# options
+## options
 
 * -h, -help: display help and exit
 * -tagger: the tagger that should be used
 * -db-name: the database that should be used
 
-# be careful
+## be careful
 
-If the TreeTagger lexicon file is longer than ~3mio lines, there is a segmentation fault. Also TreeTagger fails, if the training corpus is too large.
+If the TreeTagger lexicon file is longer than ~3mio lines, there is a segmentation fault. Also TreeTagger fails, if the training corpus is too large. ("ERROR: Can't open for reading")
