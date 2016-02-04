@@ -1,0 +1,7 @@
+{
+	"dbUser" : "",
+	"dbPass" : "",
+	"dbHost" : "",
+	"dbPort" : "",
+	"TrainTreeTaggerBinaryPath" : ""
+}
