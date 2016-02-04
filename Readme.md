@@ -6,6 +6,7 @@ This is a wrapper for different POS taggers.
 
 This tools reads from a database:
 
+```
 mysql> DESCRIBE sentences_tagged;
 +----------+------------------+------+-----+---------+-------+
 | Field    | Type             | Null | Key | Default | Extra |
@@ -25,6 +26,7 @@ mysql> DESCRIBE words_pos_base;
 | freq      | int(8) unsigned  | YES  |     | NULL    |       |
 | pos_ud17  | varchar(64)      | YES  |     |         |       |
 +-----------+------------------+------+-----+---------+-------+
+```
 
 # implemented taggers
 
